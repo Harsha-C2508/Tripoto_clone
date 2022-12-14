@@ -51,6 +51,7 @@ const DetailsPin = () => {
         console.log(otp);
         if(otp === 1234) {
             console.log("Successful");
+            alert("Successful")
         }
     })
   return (

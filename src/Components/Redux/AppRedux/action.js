@@ -3,7 +3,7 @@ import axios from 'axios'
 const getData1 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST})
     return axios
-    .get("https://api-myntra.herokuapp.com/tripoto")
+    .get("https://bookapi-b62i.onrender.com/tripoto")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS,
@@ -18,7 +18,7 @@ const getData1 = ()=>(dispatch)=>{
 const getData2 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST2})
     return axios
-    .get("https://api-myntra.herokuapp.com/slide1")
+    .get("https://bookapi-b62i.onrender.com/slide1")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS2,
@@ -33,7 +33,7 @@ const getData2 = ()=>(dispatch)=>{
 const getData3 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST3})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider2")
+    .get("https://bookapi-b62i.onrender.com/slider2")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS3,
@@ -48,7 +48,7 @@ const getData3 = ()=>(dispatch)=>{
 const getData4 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST4})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider4")
+    .get("https://bookapi-b62i.onrender.com/slider4")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS4,
@@ -63,7 +63,7 @@ const getData4 = ()=>(dispatch)=>{
 const getData5 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST5})
     return axios
-    .get("https://api-myntra.herokuapp.com/shop")
+    .get("https://bookapi-b62i.onrender.com/shop")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS5,
@@ -78,7 +78,7 @@ const getData5 = ()=>(dispatch)=>{
 const getData6 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST6})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider5")
+    .get("https://bookapi-b62i.onrender.com/slider5")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS6,
@@ -93,7 +93,7 @@ const getData6 = ()=>(dispatch)=>{
 const getData7 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST7})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider6")
+    .get("https://bookapi-b62i.onrender.com/slider6")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS7,
@@ -108,7 +108,7 @@ const getData7 = ()=>(dispatch)=>{
 const getData8 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST8})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider7")
+    .get("https://bookapi-b62i.onrender.com/slider7")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS8,
@@ -123,7 +123,7 @@ const getData8 = ()=>(dispatch)=>{
 const getData9 = ()=>(dispatch)=>{
     dispatch({ type: types.GET_DATA_REQUEST9})
     return axios
-    .get("https://api-myntra.herokuapp.com/slider8")
+    .get("https://bookapi-b62i.onrender.com/slider8")
     .then((r)=>{
         return dispatch({ 
             type: types.GET_DATA_SUCCESS9,
@@ -143,7 +143,7 @@ const getData9 = ()=>(dispatch)=>{
 const getPackageData = () => (dispatch) => {
     dispatch({type : types.REQUEST_PACKAGE_DATA});
     return axios
-   .get("https://api-myntra.herokuapp.com/user")  
+   .get("https://bookapi-b62i.onrender.com/user")  
    .then((r) => {
        // console.log(r.data);
        dispatch({type : types.SUCCESS_PACKAGE_DATA, payload: r.data});
@@ -156,7 +156,7 @@ const getPackageData = () => (dispatch) => {
 const getMindData = () => (dispatch) => {
    dispatch({type: types.REQUEST_PACKAGE_DATA_MIND});
    return axios
-   .get("https://api-myntra.herokuapp.com/mindful")
+   .get("https://bookapi-b62i.onrender.com/mindful")
    .then((r) => {
        dispatch({type: types.SUCCESS_PACKAGE_DATA_MIND, payload:r.data});
    })
@@ -168,7 +168,7 @@ const getMindData = () => (dispatch) => {
 const getDomesticData = () => (dispatch) => {
    dispatch({type: types.REQUEST_PACKAGE_DATA_DOMESTIC});
    return axios
-   .get("https://api-myntra.herokuapp.com/domestic")
+   .get("https://bookapi-b62i.onrender.com/domestic")
    .then((r) => {
        dispatch({type: types.SUCCESS_PACKAGE_DATA_DOMESTIC, payload:r.data});
    })
@@ -180,7 +180,7 @@ const getDomesticData = () => (dispatch) => {
 const getInternationalData = () => (dispatch) => {
    dispatch({type: types.REQUEST_PACKAGE_DATA_INTERNATIONAL});
    return axios
-   .get("https://api-myntra.herokuapp.com/international")
+   .get("https://bookapi-b62i.onrender.com/international")
    .then((r) => {
        dispatch({type: types.SUCCESS_PACKAGE_DATA_INTERNATIONAL, payload:r.data})
    })
@@ -192,7 +192,7 @@ const getInternationalData = () => (dispatch) => {
 const getSinglePackageData = (id) => (dispatch) => {
    dispatch({type: types.GET_SINGLE_PACKAGE_DATA});
    return axios
-   .get(`${"https://api-myntra.herokuapp.com/user"}/${id}`)
+   .get(`${"https://bookapi-b62i.onrender.com/user"}/${id}`)
    .then((r) => {
        dispatch({type: types.SUCCESS_SINGLE_PACKAGE_DATA, payload: r.data});
    })
